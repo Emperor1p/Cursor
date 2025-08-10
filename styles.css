@@ -1940,6 +1940,21 @@ section {
     .hero-buttons {
         justify-content: center;
     }
+
+    /* Blog Grid Mobile Layout - One per row */
+    .blog-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+
+    .blog-card {
+        margin-bottom: 2rem;
+    }
+
+    .blog-card.featured {
+        grid-column: 1;
+        grid-row: auto;
+    }
 }
 
 @media (max-width: 480px) {
