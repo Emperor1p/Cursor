@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Frontend Developer</title>
+    <meta name="description" content="Professional portfolio showcasing modern web development projects, skills, and expertise">
+    <meta name="keywords" content="frontend developer, web developer, portfolio, React, JavaScript, CSS">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourportfolio.com/">
+    <meta property="og:title" content="Your Name - Frontend Developer Portfolio">
+    <meta property="og:description" content="Professional portfolio showcasing modern web development projects">
+    <meta property="og:image" content="https://yourportfolio.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourportfolio.com/">
+    <meta property="twitter:title" content="Your Name - Frontend Developer Portfolio">
+    <meta property="twitter:description" content="Professional portfolio showcasing modern web development projects">
+    <meta property="twitter:image" content="https://yourportfolio.com/og-image.jpg">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="themeToggle" class="theme-btn">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+                               <ul class="nav-menu">
+                       <li class="nav-item">
+                           <a href="#home" class="nav-link">Home</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#about" class="nav-link">About</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#cv" class="nav-link">CV</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#projects" class="nav-link">Projects</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#skills" class="nav-link">Skills</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#testimonials" class="nav-link">Testimonials</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#blog" class="nav-link">Blog</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#contact" class="nav-link">Contact</a>
+                       </li>
+                       
+                   </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero">
+        <div class="hero-video-bg">
+            <video autoplay muted loop>
+                <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>🚀 Available for new opportunities</span>
+                </div>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Your Name</span></h1>
+                <h2 class="hero-subtitle">Frontend Developer & UI/UX Designer</h2>
+                <p class="hero-description">
+                    I create beautiful, responsive, and user-friendly web experiences. 
+                    Passionate about clean code, modern design, and cutting-edge technologies.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="25">0</span>
+                        <span class="stat-label">Clients</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-eye"></i>
+                        View My Work
+                    </a>
+                    <a href="#cv" class="btn btn-secondary">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-paper-plane"></i>
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="photo_2025-08-10_03-02-13.jpg" alt="Your Name" class="profile-img">
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-code"></i>
+                        <span>Full Stack Developer</span>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-palette"></i>
+                        <span>UI/UX Designer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section with Timeline -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3>Passionate Developer & Creative Problem Solver</h3>
+                        <p>
+                            I'm a passionate frontend developer with a strong foundation in modern web technologies. 
+                            I love creating intuitive user interfaces and bringing designs to life with clean, efficient code.
+                        </p>
+                        <p>
+                            With experience in React, Vue.js, and vanilla JavaScript, I focus on building 
+                            responsive, accessible, and performant web applications that provide excellent user experiences.
+                        </p>
+                    </div>
+                    
+                    <!-- Interactive Timeline -->
+                    <div class="timeline">
+                        <h4>Career Journey</h4>
+                        <div class="timeline-container">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h5>Senior Frontend Developer</h5>
+                                    <p class="timeline-company">Tech Company Inc.</p>
+                                    <p class="timeline-date">2023 - Present</p>
+                                    <p>Leading frontend development for enterprise applications</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h5>Frontend Developer</h5>
+                                    <p class="timeline-company">Startup XYZ</p>
+                                    <p class="timeline-date">2021 - 2023</p>
+                                    <p>Built responsive web applications using React and Node.js</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h5>Web Developer Intern</h5>
+                                    <p class="timeline-company">Digital Agency</p>
+                                    <p class="timeline-date">2020 - 2021</p>
+                                    <p>Developed websites and learned modern web technologies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <div class="card-header">
+                            <h4>Quick Facts</h4>
+                        </div>
+                        <div class="card-content">
+                            <div class="fact-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h5>Education</h5>
+                                    <p>BSc Computer Science</p>
+                                </div>
+                            </div>
+                            <div class="fact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h5>Location</h5>
+                                    <p>San Francisco, CA</p>
+                                </div>
+                            </div>
+                            <div class="fact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h5>Experience</h5>
+                                    <p>3+ Years</p>
+                                </div>
+                            </div>
+                            <div class="fact-item">
+                                <i class="fas fa-trophy"></i>
+                                <div>
+                                    <h5>Awards</h5>
+                                    <p>Best Developer 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV/Resume Section -->
+    <section id="cv" class="cv">
+        <div class="container">
+            <h2 class="section-title">Resume & Experience</h2>
+            <div class="cv-header">
+                <div class="cv-download">
+                    <a href="resume.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i>
+                        Download PDF
+                    </a>
+                </div>
+            </div>
+            
+            <div class="cv-content">
+                <div class="cv-section">
+                    <h3>Professional Experience</h3>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4>Senior Frontend Developer</h4>
+                            <span class="company">Tech Company Inc.</span>
+                            <span class="period">2023 - Present</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Led development of enterprise-level React applications</li>
+                            <li>Mentored junior developers and conducted code reviews</li>
+                            <li>Implemented CI/CD pipelines and automated testing</li>
+                            <li>Reduced page load times by 40% through optimization</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4>Frontend Developer</h4>
+                            <span class="company">Startup XYZ</span>
+                            <span class="period">2021 - 2023</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Built responsive web applications using modern frameworks</li>
+                            <li>Collaborated with designers to implement UI/UX designs</li>
+                            <li>Integrated third-party APIs and payment systems</li>
+                            <li>Maintained and improved existing codebase</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cv-section">
+                    <h3>Education & Certifications</h3>
+                    <div class="education-item">
+                        <h4>BSc Computer Science</h4>
+                        <p class="institution">University of Technology</p>
+                        <p class="period">2017 - 2021</p>
+                        <p>Graduated with First Class Honours</p>
+                    </div>
+                    
+                    <div class="certifications">
+                        <h4>Certifications</h4>
+                        <div class="cert-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS Certified Developer</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fab fa-google"></i>
+                            <span>Google Cloud Professional</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>Microsoft Azure Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with Filters -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+                <button class="filter-btn" data-filter="utility">Utilities</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- GrowEasyAdmin - Admin Dashboard -->
+                <div class="project-card" data-category="dashboard">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center" alt="GrowEasyAdmin Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Emperor1p/GrowEasyAdmin" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Admin Dashboard</div>
+                        <h3>GrowEasyAdmin</h3>
+                        <p>A modern admin dashboard built with Next.js, TypeScript, and Tailwind CSS. Features user management, analytics, and responsive design.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number" data-target="57">0</span><span>%</span>
+                                <span class="stat-label">TypeScript</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="25">0</span><span>%</span>
+                                <span class="stat-label">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Etsy E-commerce Portfolio -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop&crop=center" alt="Etsy E-commerce Portfolio">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Emperor1p/Etsy-Ecommerce-Portfolio" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://etsy-ecommerce-portfolio.vercel.app" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">E-commerce Portfolio</div>
+                        <h3>Etsy E-commerce Portfolio</h3>
+                        <p>A responsive e-commerce portfolio website showcasing products with modern design, shopping cart functionality, and smooth animations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number" data-target="79">0</span><span>%</span>
+                                <span class="stat-label">JavaScript</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="17">0</span><span>%</span>
+                                <span class="stat-label">HTML</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calculator App -->
+                <div class="project-card" data-category="utility">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop&crop=center" alt="Calculator App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Emperor1p/Calculator" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Web Application</div>
+                        <h3>Calculator</h3>
+                        <p>A functional calculator application with a clean interface, supporting basic arithmetic operations and keyboard input.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number" data-target="100">0</span><span>%</span>
+                                <span class="stat-label">Accuracy</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-text">Fast</span>
+                                <span class="stat-label">Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MEDILAB -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop&crop=center" alt="MEDILAB">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Emperor1p/MEDILAB" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Healthcare Website</div>
+                        <h3>MEDILAB</h3>
+                        <p>A modern healthcare website with medical services, appointment booking, and patient information management system.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-text">24/7</span>
+                                <span class="stat-label">Available</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="100">0</span><span>%</span>
+                                <span class="stat-label">Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- To-Do List -->
+                <div class="project-card" data-category="utility">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=250&fit=crop&crop=center" alt="To-Do List">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Emperor1p/To-Do-List" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Task Management</div>
+                        <h3>To-Do List</h3>
+                        <p>A feature-rich todo list application with task management, local storage, and intuitive user interface for productivity.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Local Storage</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number" data-target="100">0</span><span>%</span>
+                                <span class="stat-label">Tasks Saved</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-text">Fast</span>
+                                <span class="stat-label">Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz App -->
+                <div class="project-card" data-category="utility">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=250&fit=crop&crop=center" alt="Quiz App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Emperor1p/Quiz-App" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Interactive Quiz</div>
+                        <h3>Quiz App</h3>
+                        <p>An interactive quiz application with multiple choice questions, scoring system, and timer functionality for engaging user experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Timer</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number" data-target="100">0</span><span>%</span>
+                                <span class="stat-label">Interactive</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-text">Real-time</span>
+                                <span class="stat-label">Scoring</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clock App -->
+                <div class="project-card" data-category="utility">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop&crop=center" alt="Clock App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Emperor1p/Clock" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Utility App</div>
+                        <h3>Clock</h3>
+                        <p>A digital clock application with real-time updates, multiple time formats, and clean minimalist design for everyday use.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Real-time</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number" data-target="100">0</span><span>%</span>
+                                <span class="stat-label">Accurate</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-text">24/7</span>
+                                <span class="stat-label">Running</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Simple Dashboard -->
+                <div class="project-card" data-category="dashboard">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&crop=center" alt="Simple Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Emperor1p/simple-dashboard" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Dashboard</div>
+                        <h3>Simple Dashboard</h3>
+                        <p>A clean and intuitive dashboard interface with data visualization, user management, and responsive design for business applications.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Charts</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number" data-target="100">0</span><span>%</span>
+                                <span class="stat-label">Responsive</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-text">Fast</span>
+                                <span class="stat-label">Loading</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta">
+                <a href="#" class="btn btn-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            
+            <!-- Skills Overview -->
+            <div class="skills-overview">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="HTML5">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="CSS3">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="React">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Vue.js">
+                            <i class="fab fa-vuejs"></i>
+                            <span>Vue.js</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend & DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Node.js">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Python">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Docker">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="AWS">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="78"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Design & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Figma">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Adobe">
+                            <i class="fab fa-adobe"></i>
+                            <span>Adobe Suite</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Git">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="VS Code">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modern Tools Section -->
+            <div class="ai-tools">
+                <h3>Modern Development Tools</h3>
+                <div class="ai-tools-grid">
+                    <div class="ai-tool">
+                        <i class="fab fa-git-alt"></i>
+                        <h4>Version Control</h4>
+                        <p>Git workflow and collaborative development</p>
+                    </div>
+                    <div class="ai-tool">
+                        <i class="fas fa-code"></i>
+                        <h4>Code Quality</h4>
+                        <p>ESLint, Prettier, and TypeScript for clean code</p>
+                    </div>
+                    <div class="ai-tool">
+                        <i class="fas fa-rocket"></i>
+                        <h4>Deployment</h4>
+                        <p>Vercel, Netlify, and AWS for seamless deployment</p>
+                    </div>
+                    <div class="ai-tool">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Progressive Web Apps</h4>
+                        <p>Offline-first applications with modern web APIs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Working with Peter was an absolute pleasure. The attention to detail and modern approach to web development exceeded our expectations. The final product was not only beautiful but also highly functional."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60/667eea/ffffff?text=JD" alt="John Doe">
+                        <div class="author-info">
+                            <h4>John Doe</h4>
+                            <p>CEO, Tech Startup</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The e-commerce platform Peter built for us increased our sales by 300% in the first quarter. The user experience is seamless and the performance is outstanding."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60/764ba2/ffffff?text=JS" alt="Jane Smith">
+                        <div class="author-info">
+                            <h4>Jane Smith</h4>
+                            <p>Founder, E-Commerce Store</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Exceptional developer with a keen eye for design. Peter delivered our project on time and within budget. The mobile app they created has received rave reviews from our users."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60/fbbf24/ffffff?text=MB" alt="Mike Brown">
+                        <div class="author-info">
+                            <h4>Mike Brown</h4>
+                            <p>CTO, Mobile App Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial Stats -->
+            <div class="testimonial-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50">0</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="25">0</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-text">4.9★</span>
+                    <span class="stat-label">Average Rating</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Insights Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Insights</h2>
+            
+            <div class="blog-grid">
+                <article class="blog-card featured">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=300&fit=crop&crop=center" alt="Modern Web Development">
+                        <div class="blog-category">Featured</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">March 15, 2024</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                        <h3>Modern Web Development Trends in 2024</h3>
+                        <p>Exploring the latest trends in web development, from React 18 features to modern CSS techniques and performance optimization strategies.</p>
+                        <div class="blog-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Trends</span>
+                        </div>
+                        <a href="blog/modern-web-development-2024.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=200&fit=crop&crop=center" alt="React Performance Tips">
+                        <div class="blog-category">Development</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">March 10, 2024</span>
+                            <span class="blog-read-time">3 min read</span>
+                        </div>
+                        <h3>10 React Performance Optimization Tips</h3>
+                        <p>Learn the best practices for optimizing React applications for better performance and user experience.</p>
+                        <div class="blog-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Performance</span>
+                        </div>
+                        <a href="blog/react-performance-tips.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=200&fit=crop&crop=center" alt="UX Design Principles">
+                        <div class="blog-category">Design</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">March 5, 2024</span>
+                            <span class="blog-read-time">4 min read</span>
+                        </div>
+                        <h3>Essential UX Design Principles for 2024</h3>
+                        <p>Discover the key user experience design principles that will dominate web design in 2024 and beyond.</p>
+                        <div class="blog-tags">
+                            <span class="tag">UX Design</span>
+                            <span class="tag">Web Design</span>
+                        </div>
+                        <a href="blog/ux-design-principles-2024.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="blog-cta">
+                <a href="blog/all-articles.html" class="btn btn-primary">View All Articles</a>
+                <div class="newsletter-signup">
+                    <h4>Stay Updated</h4>
+                    <p>Get the latest insights delivered to your inbox</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate or just want to say hello.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <span>adewalep096@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <span>+2348051730626</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Nigeria</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Availability</h4>
+                                <span>Available for new projects</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/Emperor1p" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Dribbble">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Calendly Integration -->
+                    <div class="calendly-section">
+                        <h4>Schedule a Consultation</h4>
+                        <p>Book a free 30-minute consultation to discuss your project</p>
+                        <div class="calendly-options">
+                            <a href="https://calendly.com/adewalep096/30min" target="_blank" class="btn btn-primary calendly-btn" id="calendlyBtn">
+                                <i class="fas fa-calendar-alt"></i>
+                                Book Consultation
+                            </a>
+                            <a href="tel:+2348051730626" class="btn btn-secondary calendly-btn" id="quickCallBtn">
+                                <i class="fas fa-phone"></i>
+                                Quick Call
+                            </a>
+                        </div>
+                        <div class="calendly-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>30 min consultation</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-video"></i>
+                                <span>Video call available</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-gift"></i>
+                                <span>Free of charge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-header">
+                        <h3>Send me a message</h3>
+                        <p>I'll get back to you within 24 hours</p>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-5k">Under $5,000</option>
+                            <option value="5k-10k">$5,000 - $10,000</option>
+                            <option value="10k-25k">$10,000 - $25,000</option>
+                            <option value="25k-plus">$25,000+</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                        <div class="form-note">
+                            <i class="fas fa-shield-alt"></i>
+                            Your information is secure and will never be shared
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Your Name</h3>
+                    <p>Frontend Developer & UI/UX Designer creating beautiful digital experiences with modern technologies.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/Emperor1p" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/yourusername" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://dribbble.com/yourusername" target="_blank" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#cv">Resume</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#contact">Web Development</a></li>
+                        <li><a href="#contact">UI/UX Design</a></li>
+                        <li><a href="#contact">React Applications</a></li>
+                        <li><a href="#contact">Responsive Design</a></li>
+                        <li><a href="#contact">Performance Optimization</a></li>
+                        <li><a href="#contact">Code Review</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+                        <p><i class="fas fa-clock"></i> Available for new projects</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Name. All rights reserved. | Built with ❤️ using React & modern web technologies</p>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

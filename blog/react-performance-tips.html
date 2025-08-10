@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 React Performance Optimization Tips - Your Name</title>
+    <meta name="description" content="Learn the best practices for optimizing React applications for better performance and user experience.">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" style="max-width: 800px; margin: 0 auto; padding: 2rem 1rem;">
+        <header style="text-align: center; margin-bottom: 3rem;">
+            <a href="../index.html" style="color: #667eea; text-decoration: none; font-weight: 600; margin-bottom: 1rem; display: inline-block;">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+            <h1 style="font-size: 2.5rem; font-weight: 700; color: #1f2937; margin-bottom: 1rem;">
+                10 React Performance Optimization Tips
+            </h1>
+            <div style="color: #6b7280; font-size: 0.9rem;">
+                <span><i class="fas fa-calendar"></i> March 10, 2024</span>
+                <span style="margin-left: 1rem;"><i class="fas fa-clock"></i> 3 min read</span>
+            </div>
+        </header>
+
+        <article style="line-height: 1.8; color: #374151;">
+            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=400&fit=crop&crop=center" 
+                 alt="React Performance Tips" 
+                 style="width: 100%; height: 400px; object-fit: cover; border-radius: 12px; margin-bottom: 2rem;">
+
+            <p style="font-size: 1.1rem; color: #6b7280; margin-bottom: 2rem;">
+                Performance optimization is crucial for React applications. Here are 10 essential tips to make your React apps faster and more efficient.
+            </p>
+
+            <h2 style="font-size: 1.8rem; font-weight: 600; color: #1f2937; margin: 2rem 0 1rem;">1. Use React.memo for Component Memoization</h2>
+            <p>
+                React.memo prevents unnecessary re-renders by memoizing components. It's especially useful for components that receive the same props frequently.
+            </p>
+
+            <h2 style="font-size: 1.8rem; font-weight: 600; color: #1f2937; margin: 2rem 0 1rem;">2. Implement useMemo and useCallback</h2>
+            <p>
+                useMemo memoizes expensive calculations, while useCallback memoizes functions. Both help prevent unnecessary re-renders and computations.
+            </p>
+
+            <h2 style="font-size: 1.8rem; font-weight: 600; color: #1f2937; margin: 2rem 0 1rem;">3. Code Splitting with React.lazy</h2>
+            <p>
+                Use React.lazy and Suspense to split your code into smaller chunks, reducing the initial bundle size and improving load times.
+            </p>
+
+            <h2 style="font-size: 1.8rem; font-weight: 600; color: #1f2937; margin: 2rem 0 1rem;">4. Optimize Bundle Size</h2>
+            <p>
+                Remove unused dependencies, use tree shaking, and consider using smaller alternatives to large libraries.
+            </p>
+
+            <h2 style="font-size: 1.8rem; font-weight: 600; color: #1f2937; margin: 2rem 0 1rem;">5. Virtual Scrolling for Large Lists</h2>
+            <p>
+                For large lists, implement virtual scrolling to render only visible items, significantly improving performance.
+            </p>
+
+            <h2 style="font-size: 1.8rem; font-weight: 600; color: #1f2937; margin: 2rem 0 1rem;">6. Optimize Images</h2>
+            <p>
+                Use modern image formats, implement lazy loading, and consider using next/image for Next.js applications.
+            </p>
+
+            <h2 style="font-size: 1.8rem; font-weight: 600; color: #1f2937; margin: 2rem 0 1rem;">7. Avoid Inline Styles</h2>
+            <p>
+                Inline styles create new objects on every render. Use CSS classes or styled-components for better performance.
+            </p>
+
+            <h2 style="font-size: 1.8rem; font-weight: 600; color: #1f2937; margin: 2rem 0 1rem;">8. Use Production Builds</h2>
+            <p>
+                Always use production builds for deployment. Development builds include extra debugging information that slows down performance.
+            </p>
+
+            <h2 style="font-size: 1.8rem; font-weight: 600; color: #1f2937; margin: 2rem 0 1rem;">9. Implement Proper Key Props</h2>
+            <p>
+                Use stable, unique keys for list items to help React efficiently update the DOM and avoid unnecessary re-renders.
+            </p>
+
+            <h2 style="font-size: 1.8rem; font-weight: 600; color: #1f2937; margin: 2rem 0 1rem;">10. Monitor Performance</h2>
+            <p>
+                Use React DevTools Profiler and browser performance tools to identify bottlenecks and measure improvements.
+            </p>
+
+            <div style="margin-top: 3rem; padding: 2rem; background: #f8fafc; border-radius: 12px;">
+                <h3 style="color: #1f2937; margin-bottom: 1rem;">About the Author</h3>
+                <p style="margin-bottom: 1rem;">
+                    Your Name is a passionate frontend developer with expertise in React, modern CSS, and performance optimization. 
+                    Follow for more insights on web development trends and best practices.
+                </p>
+                <a href="../index.html#contact" style="color: #667eea; text-decoration: none; font-weight: 500;">
+                    Get in touch <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </article>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
