@@ -195,6 +195,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Initialize typing animation
+document.addEventListener('DOMContentLoaded', function() {
+    const heroTitle = document.querySelector('.hero-title');
+    if (heroTitle) {
+        const originalText = heroTitle.innerHTML;
+        setTimeout(() => {
+            typeWriter(heroTitle, originalText, 80);
+        }, 1000);
+    }
+});
+
 // Parallax Effects
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
@@ -213,9 +224,7 @@ window.addEventListener('scroll', () => {
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
+        // Get form data for validation
         const formData = new FormData(this);
         const name = formData.get('name');
         const email = formData.get('email');
@@ -225,18 +234,25 @@ if (contactForm) {
         
         // Simple validation
         if (!name || !email || !subject || !message) {
+            e.preventDefault();
             showNotification('Please fill in all required fields', 'error');
             return;
         }
         
         if (!isValidEmail(email)) {
+            e.preventDefault();
             showNotification('Please enter a valid email address', 'error');
             return;
         }
         
-        // Simulate form submission
-        showNotification('Message sent successfully! I\'ll get back to you within 24 hours.', 'success');
-        this.reset();
+        // If validation passes, allow form to submit naturally
+        
+        // Show loading message
+        showNotification('Sending message...', 'info');
+        
+        // Let the form submit naturally to FormSubmit
+        // The service will send the email directly to your Gmail
+        // FormSubmit will handle the submission and redirect
     });
 }
 
